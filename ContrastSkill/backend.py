@@ -18,7 +18,7 @@ seqeval = evaluate.load('seqeval')
 
 class Info_NCE(torch.nn.Module):
     """
-    This loss is the implementation of the NT-XENT loss
+    This loss is the implementation of the InfoNCE loss
     """
     def __init__(self, args):
 
