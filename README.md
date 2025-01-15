@@ -4,7 +4,7 @@ This repository describes ContrastSkill, a supervised contrastive pre-training f
 ## ContrastSkill
 !!! All the experiments are based on torch 2.4.1 + cu121 !!!
 
-First, clone this repository, and make sure all the data and output paths are correct. If you want to deploy ContrastSkill, you need to first download the pre-trained model from (link to anonymised Google Drive to be provided) (models will be released to HuggingFace upon acceptance to the conference). Upload the pre-trained model to the designated folder (e.g., Model_SKILLSPAN in the deploy_final.sh example). Then navigate to the project repository in your terminal and run:
+First, clone this repository, and make sure all the data and output paths are correct. If you want to deploy ContrastSkill, you need to first download the pre-trained model from (models will be released to HuggingFace upon acceptance to the conference). Upload the pre-trained model to the designated folder (e.g., Model_SKILLSPAN in the deploy_final.sh example). Then navigate to the project repository in your terminal and run:
 ```bash
 bash deploy_final.sh
 ```
