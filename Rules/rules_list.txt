@@ -7950,7 +7950,7 @@ competencies = [
         if match_1:
         elif match_2 and match_3:
         if matched_fragments:
-        label = 'ITC system integration'
+        label = 'ICT system integration'
     """,
 
     """  
