@@ -11099,7 +11099,7 @@ def knowledge(df):#
             df.loc[index, 'knowledge_' + str(k)] = 'control systems'
             df.loc[index, 'knowledge_' + str(k) + '_fragments'] = join_lists(matched_fragments)
 
-        # Matching fragments for ITC system integration
+        # Matching fragments for ICT system integration
         matched_fragments = []  # Reset matched fragments
         match_1 = o(r'\bsystem[s]?\s+integrat\w*|\bintegrate\s+system\w*|\bintegrat[e]?[i]?[o]?[n]?\s+system\w*', text)
         match_2 = o(r'\bict\b|\bitc\b|\binformation\s+communication\s+technology\w*|\binformation\s+technology\s+communication\w*|\binformation\s+communication\s+system\w*|\binformation\s+technology\s+system\w*', text)
@@ -11110,7 +11110,7 @@ def knowledge(df):#
             matched_fragments.extend([match_2, match_3])
         if matched_fragments:
             k = k + 1
-            df.loc[index, 'knowledge_' + str(k)] = 'ITC system integration'
+            df.loc[index, 'knowledge_' + str(k)] = 'ICT system integration'
             df.loc[index, 'knowledge_' + str(k) + '_fragments'] = join_lists(matched_fragments)
 
         # Matching fragments for arc welding
