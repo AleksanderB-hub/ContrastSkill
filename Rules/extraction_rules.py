@@ -19369,7 +19369,7 @@ def knowledge(df):#
 
         # Matching fragments for quality standards for financial capability
         matched_fragments = []
-        match_1 = o(r'\bfinancial\w+abilit\w*|\bfinance\w+abilit\w*|\bfinancial\w+acumen\w*|\bfinance\s+acumen|\bfinancial\s+capabilit\w*|\bfinance\s+capabilit\w*|\bfinancial\s+knowledge\w*|\bfinance\s+knowledge\w*|\bfinancial\s+understand\w*|\bfinance\s+understand\w*|\bunderstand[i]?[n]?[g]?\s+financ\w*|\bfinancial\s+skill\w*|\bfinance\s+skill\w*|\bfinancial\s+litera\w*|\bfinance\s+litera\w*|\bfinancial\s+expertise\w*', text)
+        match_1 = o(r'\bfinancial\s+abilit\w*|\bfinance\s+abilit\w*|\bfinancial\s+acumen\w*|\bfinance\s+acumen|\bfinancial\s+capabilit\w*|\bfinance\s+capabilit\w*|\bfinancial\s+knowledge\w*|\bfinance\s+knowledge\w*|\bfinancial\s+understand\w*|\bfinance\s+understand\w*|\bunderstand[i]?[n]?[g]?\s+financ\w*|\bfinancial\s+skill\w*|\bfinance\s+skill\w*|\bfinancial\s+litera\w*|\bfinance\s+litera\w*|\bfinancial\s+expertise\w*', text)
         if match_1:
             matched_fragments.append(match_1)
         if matched_fragments:
