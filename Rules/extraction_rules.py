@@ -13332,8 +13332,8 @@ def knowledge(df):#
         # Matching fragments for electrical wiring and circuit diagrams
         matched_fragments = []  # Reset matched fragments
         match_1 = o(r'\bsingle\s+line\s+diagram\w*|\bblock\s+cable\s+diagram\w*|\belectrical\s+installation\w*|\bcable\s+route\s+draw\w*|\bcircuit\s+diagram\w*|\bcircuit\s+blueprint\w*|\bcircuit\s+schema\w*|\bdiagram\s+circuit\w*|\belectric[a]?[l]?\s+diagram\w*|\belectric[a]?[l]?\s+schemat\w*|\belectronic\s+diagram\w*|\belectronic\s+schemat\w*|\belementary\s+diagram\w*|\bschedule\s+load\w*', text)
-        match_2 = o(r'\bdiagram\w*|\bcable\b|\bwiring\w*|\bcircuit\b|\bsld\b', text)
-        match_3 = o(r'\bdiagram\b|\bdraw\w*', text)
+        match_2 = o(r'\bcable\b|\bwiring\w*|\bcircuit\b|\bsld\b', text)
+        match_3 = o(r'\bdiagram\w*|\bdraw\w*', text)
         if match_1:
             matched_fragments.extend([match_1])
         elif match_2 and match_3:
