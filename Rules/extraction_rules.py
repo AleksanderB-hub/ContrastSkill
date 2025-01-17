@@ -14893,14 +14893,14 @@ def knowledge(df):#
             df.loc[index, 'knowledge_' + str(k)] = 'mapinfo software'
             df.loc[index, 'knowledge_' + str(k) + '_fragments'] = join_lists(matched_fragments)
 
-        # Matching fragments for qgis fotware
+        # Matching fragments for qgis software
         matched_fragments = []  # Reset matched fragments
         match_1 = o(r'\bqgis\b', text)
         if match_1:
             matched_fragments.append(match_1)
         if matched_fragments:
             k = k + 1
-            df.loc[index, 'knowledge_' + str(k)] = 'qgis fotware'
+            df.loc[index, 'knowledge_' + str(k)] = 'qgis software'
             df.loc[index, 'knowledge_' + str(k) + '_fragments'] = join_lists(matched_fragments)
 
         # Matching fragments for indesign software
