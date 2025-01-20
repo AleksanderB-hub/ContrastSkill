@@ -15525,7 +15525,7 @@ def knowledge(df):#
         matched_fragments = []  # Reset matched fragments
         match_1 = o(r'\bcloud\s+service\w*|\bcloud\s+infrastructure\b|\bcloud\s+architecture\w*|\bcloud\s+software\w*', text)
         match_2 = o(r'\bcloud\b', text)
-        match_3 = o(r'\software\w*|\bsystem\w*|\bprogramming\w*|\bdeveloper\w*|\baws\b|\boracle\b|\btechnology\w*|\barchitect\w*|\bserver\w*|\bexperience\w*|\bknowledge\w*', text)
+        match_3 = o(r'\bsoftware\w*|\bsystem\w*|\bprogramming\w*|\bdeveloper\w*|\baws\b|\boracle\b|\btechnology\w*|\barchitect\w*|\bserver\w*|\bexperience\w*|\bknowledge\w*', text)
         if match_1:
             matched_fragments.extend([match_1])
         elif match_2 and match_3:
