@@ -7237,7 +7237,7 @@ def skill(df):
         # Matching fragments for comprehend financial business terminology
         matched_fragments = []  # Reset matched fragments
         match_1 = o(r'\bfinancial\s+acumen\w*|\bfinancial\s+knowledge\w*|\bfinancial\s+expertise\w*|\bbusiness\s+acumen\w*|\bbusiness\s+knolwedge\w*|\bbusiness\s+expertise\w*|\bcommercial\s+acumen\w*|\bfinnancial\s+acumen\w*|\bcommercial\s+process\w*|\bcommercial\s+activity\w*|\bbusiness\s+develop\w*|\bfinancial\s+litera\w*|\bfinance\s+litera\w*|\bunderstand[i]?[n]?[g]?\s+business\w*', text)
-        match_2 = o(r'\business\w*', text)
+        match_2 = o(r'\bbusiness\w*', text)
         match_3 = o(r'\bfinance\w*|\bfinancial\w*|\bcommercial\w*|\bknowledg\w*|\bexpertise\w*|\bexperience\w*', text)
         if match_1:
             matched_fragments.extend([match_1])
