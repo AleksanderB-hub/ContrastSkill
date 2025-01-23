@@ -5232,7 +5232,7 @@ def skill(df):
 
         # Matching fragments for perform site acceptance test
         matched_fragments = []  # Reset matched fragments
-        match_1 = o(r'\bsite\sacceptance\s+test\w*', text)
+        match_1 = o(r'\bsite\s+acceptance\s+test\w*', text)
         match_2 = o(r'\bsat\b', text)
         match_3 = o(r'\bcommission\w*|\bsite\b|\bquality\w*|\btest\w*|\bperform\w*|\bconduct\w*', text)
         if match_1:
