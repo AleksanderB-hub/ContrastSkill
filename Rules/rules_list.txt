@@ -10446,7 +10446,7 @@ competencies = [
     """,
 
     """  
-        match_1 = o(r'\\bux\s+design\w*', text)
+        match_1 = o(r'\\bux\s+design\w*|\\bux\\b\s+design\b|\\buser\s+experience\s+design\w*|\\bdesign[i]?[n]?[g]?\s+user\s+experience\w*', text)
         match_2 = o(r'\\buser\s+experience\w*|\\bux\\b|\\badobe\s+xd\w*', text)
         match_3 = o(r'\\bprogramming\w*|\\bcode\\b|\\bsoftware\s+develop\w*|\\bdevelop[i]?[n]?[g]?\s+software\w*|\\bweb\s+develop\w*|\\bwebsite\s+develop\w*|\\bdevelop[i]?[n]?[g]?\s+website\w*|\\bapp\s+develop\w*|\\bapplication\s+develop\w*|\\bdevelop[i]?[n]?[g]?\s+app\w*|\\bdesign\w*|\\bmanage\w*|\\bcreate\w*|\\bmanaging\w*|\\bcreating\w*', text)
         if match_1:
@@ -13006,13 +13006,6 @@ competencies = [
         elif match_2 and match_3 and match_4:
         if matched_fragments:
         label = 'levels of software testing'
-    """,
-
-    """  
-        match_1 = o(r'\\bux\\b\s+design\\b|\\buser\s+experience\s+design\w*|\\bdesign[i]?[n]?[g]?\s+user\s+experience\w*', text)
-        if match_1:
-        if matched_fragments:
-        label = 'user experience design'
     """,
 
     """  
