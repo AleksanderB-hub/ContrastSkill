@@ -14617,7 +14617,7 @@ def knowledge(df):#
 
         # Matching fragments for user experience design
         matched_fragments = []  # Reset matched fragments
-        match_1 = o(r'\bux\s+design\w*', text)
+        match_1 = o(r'\bux\b\s+design\b|\buser\s+experience\s+design\w*|\bdesign[i]?[n]?[g]?\s+user\s+experience\w*', text)
         match_2 = o(r'\buser\s+experience\w*|\bux\b|\badobe\s+xd\w*', text)
         match_3 = o(r'\bprogramming\w*|\bcode\b|\bsoftware\s+develop\w*|\bdevelop[i]?[n]?[g]?\s+software\w*|\bweb\s+develop\w*|\bwebsite\s+develop\w*|\bdevelop[i]?[n]?[g]?\s+website\w*|\bapp\s+develop\w*|\bapplication\s+develop\w*|\bdevelop[i]?[n]?[g]?\s+app\w*|\bdesign\w*|\bmanage\w*|\bcreate\w*|\bmanaging\w*|\bcreating\w*', text)
         if match_1:
@@ -18213,16 +18213,6 @@ def knowledge(df):#
         if matched_fragments:
             k = k + 1
             df.loc[index, 'knowledge_' + str(k)] = 'levels of software testing'
-            df.loc[index, 'knowledge_' + str(k) + '_fragments'] = join_lists(matched_fragments)
-
-        # Matching fragments for user experience design
-        matched_fragments = []  # Reset matched fragments
-        match_1 = o(r'\bux\b\s+design\b|\buser\s+experience\s+design\w*|\bdesign[i]?[n]?[g]?\s+user\s+experience\w*', text)
-        if match_1:
-            matched_fragments.append(match_1)
-        if matched_fragments:
-            k = k + 1
-            df.loc[index, 'knowledge_' + str(k)] = 'user experience design'
             df.loc[index, 'knowledge_' + str(k) + '_fragments'] = join_lists(matched_fragments)
 
         # Matching fragments for application lifecycle management
