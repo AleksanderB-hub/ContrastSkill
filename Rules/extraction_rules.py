@@ -14787,7 +14787,7 @@ def knowledge(df):#
         matched_fragments = []  # Reset matched fragments
         match_1 = o(r'\bfish\s+science\w*|\bfish\s+biology\w*|\bbiology\s+fish\w*|\bscience\s+fish\w*|\bichthyology\w*', text)
         match_2 = o(r'\bfish\w*', text)
-        match_3 = o(r'\becolog\w*|\biolog\w*', text)
+        match_3 = o(r'\becolog\w*|\bbiolog\w*', text)
         if match_1:
             matched_fragments.extend([match_1])
         elif match_2 and match_3:
