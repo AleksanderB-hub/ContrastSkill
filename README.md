@@ -7,7 +7,7 @@ Below is a high-level overview of the proposed framework:
 
 ## ContrastSkill
 All the experiments are based on torch 2.4.1 + cu121.
-To install required libraries, use (from your project repository):
+To install required libraries enter, use:
 ```bash
 bash pip install -r ./requirements.txt 
 ```
