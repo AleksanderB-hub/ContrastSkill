@@ -24,7 +24,10 @@ If you are interested in deploying the entire framework on your competencies dat
 
 ### Supervised Contrastive Intermediate Trained Models
 
-To facilitate reproducibility, we released each of the Stage 2 models. Models can be accessed here: BERT (https://huggingface.co/Aleksandruz/ContrastSkill_BERT), RoBERTa (https://huggingface.co/Aleksandruz/ContrastSkill_RoBERTa), JobBERTa (https://huggingface.co/Aleksandruz/ContrastSkill_JobBERTa). To work properly, these shoudl be downloaded and uploaded into the ContrastSkill directory (i.e., Models)
+To facilitate reproducibility, we released each of the Stage 2 models. To work properly, these should be downloaded and uploaded into the ContrastSkill directory (i.e., Models). Models can be accessed here: 
+> BERT (https://huggingface.co/Aleksandruz/ContrastSkill_BERT)
+> RoBERTa (https://huggingface.co/Aleksandruz/ContrastSkill_RoBERTa)
+> JobBERTa (https://huggingface.co/Aleksandruz/ContrastSkill_JobBERTa)
 
 Dummy examples for Stage 2 training data are provided in the Data folder. 
 
