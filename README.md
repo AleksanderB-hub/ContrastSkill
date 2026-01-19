@@ -1,5 +1,5 @@
 # ContrastSkill
-This repository describes ContrastSkill, a supervised contrastive pre-training framework for span-level skill extraction from sentences. 
+This repository describes ContrastSkill, a supervised contrastive intermedaite training framework for span-level skill extraction from sentences. 
 
 Below is a high-level overview of the proposed framework:
 
@@ -12,7 +12,7 @@ To install required libraries enter, use:
 bash pip install -r ./requirements.txt 
 ```
 
-First, clone this repository, and make sure all the data and output paths are correct. If you want to deploy ContrastSkill, you need to first download the pre-trained model from (models will be provided upon acceptance). Upload the pre-trained model to the designated folder (e.g., Model_SKILLSPAN in the deploy_final.sh example). Then navigate to the project repository in your terminal and run:
+First, clone this repository, and make sure all the data and output paths are correct. If you want to deploy ContrastSkill, you need to first download the contrastive tuned model. Upload the selected model to the designated folder (e.g., Model_JobBERTa in the deploy_final.sh example). Then navigate to the project repository in your terminal and run:
 ```bash
 bash deploy_final.sh
 ```
@@ -24,9 +24,9 @@ If you are interested in deploying the entire framework on your competencies dat
 
 ### Supervised Contrastive Intermediate Trained Models
 
-To facilitate reproducibility, we released each of the Stage 2 models. Models can be accessed here: BERT (https://huggingface.co/Aleksandruz/ContrastSkill_BERT), RoBERTa (https://huggingface.co/Aleksandruz/ContrastSkill_RoBERTa), JobBERTa (https://huggingface.co/Aleksandruz/ContrastSkill_JobBERTa). To work properly, these shoudl be downloaded and uploaded into the ContrastSkill directory under 
+To facilitate reproducibility, we released each of the Stage 2 models. Models can be accessed here: BERT (https://huggingface.co/Aleksandruz/ContrastSkill_BERT), RoBERTa (https://huggingface.co/Aleksandruz/ContrastSkill_RoBERTa), JobBERTa (https://huggingface.co/Aleksandruz/ContrastSkill_JobBERTa). To work properly, these shoudl be downloaded and uploaded into the ContrastSkill directory (i.e., Models)
 
-Dummy examples for pre-training data are provided in the Data folder. 
+Dummy examples for Stage 2 training data are provided in the Data folder. 
 
 ## LLM baselines
 For LLM baselines, refer to LLM-baseline.ipynb
