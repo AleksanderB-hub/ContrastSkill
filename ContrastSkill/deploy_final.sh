@@ -1,6 +1,6 @@
 #Set the main parameters (refer to main.py for in-depth on all parameters)
 DATA_PATH="./ContrastSkill/Data"
-MODEL_PATH="./ContrastSkill/Models/Model_SKILLSPAN"
+MODEL_PATH="./ContrastSkill/Models/Model_JobBERTa"
 MODEL_TYPE="joberta" #(roberta, bert)
 MODEL_VERSION="jjzha/jobberta-base"  #(FacebookAI/roberta-base, bert-base-uncased)
 SUPERVISED_LEARNING_RATE=5e-5
