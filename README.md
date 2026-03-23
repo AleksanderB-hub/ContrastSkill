@@ -31,14 +31,15 @@ To facilitate reproducibility, we released each of the Stage 2 models. To work p
 
 Dummy examples for Stage 2 training data are provided in the Data folder. 
 
+### Annotation Guidelines
+For annotation guidelines for Stage 2 training data, refer to Annotation_protocol.md 
+
 ## LLM baselines
 For LLM baselines, refer to LLM-baseline.ipynb
 
 ### Synthetic Dataset Creation
 If you want to use the provided rules to generate a synthetic competence dataset, refer to Example Generation.ipynb file in Data Processing folder and follow the provided instructions. The file contains the list of examples of the rules used for generation, if you whish to use the entirety of the competence matching rules, refer to rules_list.sty in the Rules folder.
 
-### Annotation Guidelines
-For annotation guidelines for Stage 2 training data, refer to Annotation_protocol.md 
 
 
  
