@@ -40,10 +40,9 @@ For LLM baselines, refer to LLM-baseline.ipynb
 ### Synthetic Dataset Creation
 If you want to use the provided rules to generate a synthetic competence dataset, refer to the Example Generation.ipynb file in the Data Processing folder and follow the provided instructions. The file contains the list of examples of the rules used for generation, if you whish to use the entirety of the competence matching rules, refer to rules_list.sty in the Rules folder.
 
-### Citation
-
-Please cite as:
-
+### Cite
+If you use this resource, please use the following citation:
+<pre>
 @inproceedings{bielinski2026contrastskill,
   author    = {Bielinski, Aleksander and Brazier, David and Gkatzia, Dimitra and Lawson, Alistair},
   title     = {ContrastSkill: Task-Oriented Contrastive Intermediate Training for Skill Extraction},
@@ -55,6 +54,7 @@ Please cite as:
   isbn      = {978-989-758-854-9},
   issn      = {2184-285X}
 }
+</pre>
 
  
 
